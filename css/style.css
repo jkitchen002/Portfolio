@@ -1,0 +1,169 @@
+.body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.image {
+  width: 65px;
+}
+
+.borderWidth {
+  border: 2px white solid;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  transition: ease-in-out 0.5s;
+}
+
+.borderWidth:hover {
+  border: 3px #4d81b5 solid;
+  transform: scale(1.25);
+}
+
+.name {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding: 2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #4d81b5;
+  border-bottom: 2px solid #4d81b5;
+}
+
+header {
+  background-image: url('../images/sunset.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+}
+
+#Treehouse {
+  color: #5fcf80;
+}
+
+h2 {
+  margin-top: 3rem;
+  background-color: #4d81b5;
+  color: white;
+  border-radius: 5px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #4d81b5;
+  border-bottom: 2px solid #4d81b5;
+}
+
+.work {
+  width: 100%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.Imagecontainer {
+  position: relative;
+}
+
+.imgWrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4d81b5;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  height: 20%;
+  opacity: 0.7;
+  transition: 0.5s ease-in-out;
+}
+
+.imgWrap:hover .overlay {
+  height: 100%;
+  opacity: 1;
+}
+
+.imageText {
+  cursor: pointer;
+  border: 1px white solid;
+  padding: 0 2rem;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  justify-self: center;
+  align-self: center;
+}
+
+.demo {
+  background-color: #4d81b5;
+  color: white;
+  margin-right: 10px;
+}
+
+.code {
+  color: white;
+  background-color: #343a40;
+}
+
+.code a {
+  text-decoration: none;
+  color: white;
+}
+
+svg {
+  margin: 1.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .image {
+    width: 80px;
+  }
+  .logoWidth {
+    width: 500px;
+  }
+
+  header {
+    font-size: 2rem;
+    padding: 8rem;
+  }
+
+  header span {
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+
+  svg {
+    margin: 2rem;
+  }
+}
