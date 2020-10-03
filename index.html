@@ -21,12 +21,13 @@
       class="navbar navbar-expand-md navbar navbar-dark bg-dark sticky-top pt-3"
     >
       <div class="container-fluid">
-        <img
-          src="images/avatar.jpeg"
-          class="image borderWidth mr-3"
-          alt=""
-          loading="lazy"
-        />
+        <a id="logo-link" href="#">
+          <img
+            src="images/avatar.jpeg"
+            class="image borderWidth mr-3"
+            alt="Logo"
+            loading="lazy"
+        /></a>
         <div class="logo text-white">
           <span class="name mb-0">Joseff kitchen</span>
           <br />
@@ -46,64 +47,128 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav text-center ml-md-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About Me</a>
+              <a class="nav-link" href="#development">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Me</a>
+              <button class="nav-btn" href="#contact">
+                <a href="#contact">Contact Me</a>
+              </button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <header class="mb-3">
-      <p class="text-center text-white">
-        <span>Hi, i'm Joe A front-end web developer</span>
-        from London, UK with a passion for creating beautiful and engaging
-        responsive Websites.
-      </p>
+    <header>
+      <div class="hero-text text-white">
+        <span class="text-white">Front-End</span><br />
+        <span class="underline">Web Developer</span>
+      </div>
     </header>
+
     <main class="container text-center">
       <h2 id="about">About Me</h2>
-      <p>
-        From an early age I have always enjoyed working on computers. My first
-        memory of using the internet was with my friend in the mid 90s. I
-        remember thinking they would look like the pages of a book and how
-        excited I was to use the Internet. Little did I know at the time that I
-        would develop a love for the Internet. This love has continued to grow
-        and I would have an opportunity to design and create my own websites.
-      </p>
-      <p>
-        As I have gotten older having known for a long time the world is
-        becoming a lot more digitised and with the current pandemic this has
-        happened a lot sooner than many people expected. I felt this would be an
-        excellent opportunity to become a self taught developer.
-      </p>
-      <p>
-        With my degree in hospitality and a
-        <a
-          id="Treehouse"
-          href="https://teamtreehouse.com/techdegree"
-          target="_target"
-        >
-          Treehouse Techdegree</a
-        >
-        and a passion of building and designing websites. I believe I would be
-        an excellent candidate to represent you and you organisation.
-      </p>
-      <p>
-        In my spare time, when I am not coding I regularly enjoy keeping fit by
-        playing football and going to the gym. I love and have a very strong
-        interest in traveling which I like to go site-seeing around the world.
-      </p>
+      <h3>Hi, I'm Joe</h3>
+      <h4 class="about mb-5">
+        I‘m a UI Developer / Designer from London. I design and develop web /
+        apps and specialise in HTML, CSS and Responsive Design.
+      </h4>
+      <button id="about-btn">Find out more</button>
+      <div class="more-about-me">
+        <p>
+          From an early age I have always enjoyed working on computers. My first
+          memory of using the internet was with my friend in the mid 90s. I
+          remember thinking they would look like the pages of a book and how
+          excited I was to use the Internet. Little did I know at the time that
+          I would develop a love for the Internet. This love has continued to
+          grow and I would have an opportunity to design and create my own
+          websites.
+        </p>
+        <p>
+          As I have gotten older having known for a long time the world is
+          becoming a lot more digitised and with the current pandemic this has
+          happened a lot sooner than many people expected. I felt this would be
+          an excellent opportunity to become a self taught developer.
+        </p>
+        <p>
+          With my degree in hospitality and a
+          <a
+            id="Treehouse"
+            href="https://teamtreehouse.com/techdegree"
+            target="_target"
+          >
+            Treehouse Techdegree</a
+          >
+          and a passion of building and designing websites. I believe I would be
+          an excellent candidate to represent you and you organisation.
+        </p>
+        <p>
+          In my spare time, when I am not coding I regularly enjoy keeping fit
+          by playing football and going to the gym. I love and have a very
+          strong interest in traveling which I like to go site-seeing around the
+          world.
+        </p>
+      </div>
 
-      <h2 class="portfolio">Portfolio</h2>
+      <h2 id="development" class="text-center">Design & Development</h2>
+      <div class="container text-md-left">
+        <div class="row">
+          <div class="col-md">
+            <img class="icon" src="/images/design.png" alt="Design" />
+            <span class="titles">Responsive Web Design</span>
+            <p>
+              Responsive Web Design is a design method allowing users to view
+              your web page on different size screens.
+            </p>
+            <p>
+              Mobile-first design, is extremely important as over 50% of the web
+              is viewed on a phone.
+            </p>
+            <p>
+              By designing mobile first the idea is to increase user experience
+              as mobile phones usually face greater limitation compared to
+              desktops.
+            </p>
+          </div>
+          <div class="col-md">
+            <img
+              class="icon"
+              src="/images/fdevelopment.png"
+              alt="Front-End Development"
+            />
+            <span class="titles">Front-End Development</span>
+            <p>
+              As a front-end developer I design and create the visual elements
+              of a website. From the user-facing code and the architecture of
+              its immersive user experiences.
+            </p>
+            <p>
+              In order to execute these objectives, I am adept in: HTML, CSS,
+              Javascript, SASS, Bootstrap programming.
+            </p>
+            <div class="text-center">
+              <img class="languages" src="/images/html.png" alt="HTML" />
+              <img class="languages" src="/images/css.png" alt="CSS" />
+              <img class="languages" src="/images/js.png" alt="JavaScript" />
+              <img class="languages" src="/images/sass.png" alt="Sass" />
+              <img
+                class="languages"
+                src="/images/bootstrap.png"
+                alt="Bootstrap"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="portfolio" class="portfolio">Portfolio</h2>
       <!-- Directory Modal-->
       <div class="modal fade" id="directory">
         <div class="modal-dialog">
@@ -704,5 +769,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

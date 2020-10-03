@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
   font-family: 'Poppins', sans-serif;
 }
@@ -30,25 +34,24 @@
 
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #4d81b5;
-  border-bottom: 2px solid #4d81b5;
 }
 
-header {
-  background-image: url('../images/sunset.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 2rem;
+.nav-btn {
+  border-bottom: none;
+  border-radius: 50px;
+  text-align: center;
+  padding: 0 1rem;
+  margin: 1.8rem 0;
 }
 
-#Treehouse {
-  color: #5fcf80;
-}
-
-h2 {
-  margin-top: 3rem;
+.nav-btn:hover {
   background-color: #4d81b5;
+  border-color: none;
   color: white;
-  border-radius: 5px;
+}
+
+.nav-btn:focus {
+  outline: none;
 }
 
 a {
@@ -61,9 +64,121 @@ a:hover {
   border-bottom: 2px solid #4d81b5;
 }
 
+.nav-btn a {
+  color: #343a40;
+}
+
+.nav-btn a:hover {
+  color: white;
+}
+
+#logo-link {
+  border-bottom: none;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/sunset.jpg');
+  background-size: cover;
+  height: 50vh;
+}
+.hero-text {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+}
+
+.underline {
+  border-bottom: 5px solid #4d81b5;
+}
+
+#about:target::before {
+  content: '';
+  display: block;
+  height: 120px; /* fixed header height*/
+  margin: -70px 0 0; /* negative fixed header height */
+}
+
+.me {
+  font-weight: 700;
+}
+
+#about-btn {
+  border-radius: 50px;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #4d81b5;
+  color: white;
+  cursor: pointer;
+}
+
+#about-btn:focus {
+  outline: none;
+}
+
+.more-about-me {
+  display: none;
+  margin-top: 20px;
+}
+
+.show {
+  display: block;
+}
+
+#Treehouse {
+  color: #5fcf80;
+}
+
+#development:target::before {
+  content: '';
+  display: block;
+  height: 120px; /* fixed header height*/
+  margin: -70px 0 0; /* negative fixed header height */
+}
+
+h2 {
+  margin: 3rem;
+  font-weight: bold;
+  line-height: 50px;
+  font-size: 3rem;
+  color: #343a40;
+}
+
+h2:hover {
+  border-bottom: 5px solid #4d81b5;
+}
+
+p {
+  color: #343a40;
+}
+
+.titles {
+  color: #343a40;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.icon {
+  height: 35px;
+}
+
+#portfolio:target::before {
+  content: '';
+  display: block;
+  height: 120px; /* fixed header height*/
+  margin: -70px 0 0; /* negative fixed header height */
+}
+
+.languages {
+  height: 45px;
+}
+
 .work {
   width: 100%;
-  margin: 10px;
+  margin: 20px;
   border-radius: 5px;
 }
 
@@ -111,11 +226,6 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 
-.text {
-  justify-self: center;
-  align-self: center;
-}
-
 .demo {
   background-color: #4d81b5;
   color: white;
@@ -134,11 +244,21 @@ a:hover {
 
 svg {
   margin: 1.5rem;
+  transition: ease-in-out 0.3s;
+}
+
+svg:hover {
+  transform: scale(1.2);
 }
 
 footer {
   display: flex;
   justify-content: space-between;
+  color: white;
+}
+
+.signoff {
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -150,20 +270,28 @@ footer {
   }
 
   header {
-    font-size: 2rem;
-    padding: 8rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/images/sunset.jpg');
+    background-size: cover;
+    height: 100vh;
+  }
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
   }
 
-  header span {
-    font-size: 2.5rem;
-    font-weight: bolder;
-  }
-
-  .text {
-    font-size: 1.2rem;
+  .languages {
+    height: 80px;
   }
 
   svg {
     margin: 2rem;
+  }
+
+  .contactP {
+    font-size: 1.3rem;
   }
 }
