@@ -6,6 +6,15 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 150ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
 .image {
   width: 65px;
 }
@@ -97,8 +106,8 @@ header {
 #about:target::before {
   content: '';
   display: block;
-  height: 120px; /* fixed header height*/
-  margin: -70px 0 0; /* negative fixed header height */
+  height: 120px;
+  margin: -70px 0 0;
 }
 
 .me {
@@ -176,6 +185,28 @@ p {
   height: 45px;
 }
 
+.from-left {
+  grid-column: 2/3;
+  transform: translateX(-50%);
+}
+
+.from-right {
+  grid-column: 3/4;
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, transform 450ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .work {
   width: 100%;
   margin: 20px;
@@ -240,6 +271,12 @@ p {
 .code a {
   text-decoration: none;
   color: white;
+}
+#contact:target::before {
+  content: '';
+  display: block;
+  height: 120px; /* fixed header height*/
+  margin: -70px 0 0; /* negative fixed header height */
 }
 
 svg {
