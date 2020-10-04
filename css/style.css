@@ -45,24 +45,6 @@ html {
   color: #4d81b5;
 }
 
-.nav-btn {
-  border-bottom: none;
-  border-radius: 50px;
-  text-align: center;
-  padding: 0 1rem;
-  margin: 1.8rem 0;
-}
-
-.nav-btn:hover {
-  background-color: #4d81b5;
-  border-color: none;
-  color: white;
-}
-
-.nav-btn:focus {
-  outline: none;
-}
-
 a {
   color: white;
 }
@@ -73,11 +55,17 @@ a:hover {
   border-bottom: 2px solid #4d81b5;
 }
 
-.nav-btn a {
+#nav-btn {
+  border: 1px solid #343a40;
+  border-radius: 50px;
+  margin: 2rem;
+  padding: 0rem 2rem;
+  background-color: white;
   color: #343a40;
 }
 
-.nav-btn a:hover {
+#nav-btn:hover {
+  background-color: #4d81b5;
   color: white;
 }
 
@@ -151,7 +139,7 @@ h2 {
   margin: 3rem;
   font-weight: bold;
   line-height: 50px;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #343a40;
 }
 
@@ -299,6 +287,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+
   .image {
     width: 80px;
   }
