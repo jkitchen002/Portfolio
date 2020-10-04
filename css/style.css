@@ -73,11 +73,11 @@ a:hover {
   border-bottom: none;
 }
 
-header {
+.headerImage {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-image: url(/images/hero-image.jpg);
   background-size: cover;
-  height: 50vh;
+  height: 100vh;
 }
 .hero-text {
   position: absolute;
