@@ -1,5 +1,12 @@
 const aboutBtn = document.querySelector('#about-btn');
 let moreAboutMe = document.querySelector('.more-about-me');
+const nav = document.querySelector('nav');
+const sectionOne = document.querySelector('.home-intro');
+const aboutMe = document.querySelector('#about-me');
+const faders = document.querySelectorAll('.fade-in');
+const sliders = document.querySelectorAll('.slide-in');
+
+//---------
 
 function show() {
   moreAboutMe.classList.toggle('show');
@@ -10,14 +17,28 @@ aboutBtn.addEventListener('click', () => {
 });
 
 // ----------Scroll---------------------
-const aboutMe = document.querySelector('#about-me');
-const faders = document.querySelectorAll('.fade-in');
-const sliders = document.querySelectorAll('.slide-in');
 
-const portfolioOptions = {
-  threshold: 0,
-  rootMargin: '0px 0px -20px 0px',
+//------------Nav bar scroll
+
+const sectionOneOptions = {
+  rootMargin: '-60px 0px 0px 0px',
 };
+
+const sectionOneObserver = new IntersectionObserver(function (
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      nav.classList.add('nav-container');
+    } else {
+      nav.classList.remove('nav-container');
+    }
+  });
+},
+sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
 
 const options = {
   threshold: 0.2,
@@ -42,6 +63,11 @@ options);
 faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
+
+const portfolioOptions = {
+  threshold: 0,
+  rootMargin: '0px 0px -20px 0px',
+};
 
 const portfolioOnScroll = new IntersectionObserver(function (
   entries,
