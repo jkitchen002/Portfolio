@@ -87,3 +87,22 @@ portfolioOptions);
 sliders.forEach((slider) => {
   portfolioOnScroll.observe(slider);
 });
+
+const hamburgermenu = document.querySelector('.navbar-toggler-icon');
+const avatar = document.querySelector('.me');
+const speech = document.querySelector('.speech');
+const header = document.querySelector('header');
+
+function display() {
+  if (avatar.style.display === 'none' && speech.style.display === 'none') {
+    avatar.style.display = 'block';
+    speech.style.display = 'block';
+  } else {
+    avatar.style.display = 'none';
+    speech.style.display = 'none';
+  }
+}
+
+hamburgermenu.addEventListener('click', () => {
+  display();
+});
