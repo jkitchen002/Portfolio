@@ -117,6 +117,63 @@
       </div>
 
       <h2 id="portfolio" class="portfolio">Portfolio</h2>
+      <!--Pagination Modal-->
+      <div class="modal fade" id="pagination">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Data Pagination and Filter</h5>
+              <button class="close" type="button" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!--modal header-->
+            <div class="modal-body">
+              <video width="320" height="240" controls>
+                <source src="video/pagination.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <p>
+                I have built an app that contains information about 42 students. Using pagination buttons allowing you to filter pages.
+              </p>
+            </div>
+            <!--end modal-content-->
+          </div>
+          <!--end modal-dialog-->
+        </div>
+        <!--modal end-->
+      </div>
+      <!--Pagination Modal end-->
+
+
+      <!--Quotes Modal-->
+      <div class="modal fade" id="quotes">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Random Quote Generator</h5>
+              <button class="close" type="button" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!--modal header-->
+            <div class="modal-body">
+              <video width="320" height="240" controls>
+                <source src="video/quotes.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <p>
+                Built a basic JavaScript Random Quote Generator, a program that displays a randomly selected quote each time the user clicks a button. To practice my syntax and data structures.
+              </p>
+            </div>
+            <!--end modal-content-->
+          </div>
+          <!--end modal-dialog-->
+        </div>
+        <!--modal end-->
+      </div>
+      <!--Quotes Modal end-->
+
       <!-- Directory Modal-->
       <div class="modal fade" id="directory">
         <div class="modal-dialog">
@@ -238,91 +295,76 @@
       </div>
       <!--Gallery Modal end-->
 
-      <!--Styles Modal-->
-      <div class="modal fade" id="styles">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Web Style Guide</h5>
-              <button class="close" type="button" data-dismiss="modal">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <!--modal header-->
-            <div class="modal-body">
-              <video width="320" height="240" controls>
-                <source src="video/styles.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <p>
-                I create a style guide that can act as my own personal and
-                custom Bootstrap that I can drop into any project to speed up
-                styling, layout, and development in general.
-              </p>
-              <a
-                class="demo btn btn-sm"
-                href="https://jkitchen002.github.io/Web-Style-Guide/"
-                target="_blank"
-                >Demo</a
-              >
-              <a
-                class="code btn btn-secondary btn-sm"
-                href="https://github.com/jkitchen002/Web-Style-Guide"
-                target="_blank"
-                >Code</a
-              >
-            </div>
-            <!--end modal-content-->
-          </div>
-          <!--end modal-dialog-->
-        </div>
-        <!--modal end-->
-      </div>
-      <!--Styles Modal end-->
 
-      <!--Form Modal-->
-      <div class="modal fade" id="form">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">An Online Registration Form</h5>
-              <button class="close" type="button" data-dismiss="modal">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <!--modal header-->
-            <div class="modal-body">
-              <video width="320" height="240" controls>
-                <source src="video/form.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <p>
-                I build a responsive, mobile-first registration form using a
-                variety of HTML form elements and CSS.
-              </p>
-              <a
-                class="demo btn btn-sm"
-                href="https://jkitchen002.github.io/Online-Registration-Form/index.html"
-                target="_blank"
-                >Demo</a
-              >
-              <a
-                class="code btn btn-secondary btn-sm"
-                href="https://github.com/jkitchen002/Online-Registration-Form"
-                target="_blank"
-                >Code</a
-              >
-            </div>
-            <!--end modal-content-->
-          </div>
-          <!--end modal-dialog-->
-        </div>
-        <!--modal end-->
-      </div>
-      <!--Form Modal end-->
 
       <div class="imageConatiner container mt-md-3">
         <div class="row">
+          <div class="text col-sm mb-md-5">
+            <div class="imgWrap">
+              <img
+                class="slide-in from-left work mx-auto d-block"
+                src="./images/pagination.png"
+                alt="Game Show App"
+              />
+              <a
+                class="demo btn btn-sm"
+                href="joseffkitchen.com/data-pagination"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                class="code btn btn-secondary btn-sm"
+                href="https://github.com/jkitchen002/data-pagination"
+                target="_blank"
+                >Code</a
+              >
+              <div class="overlay">
+                <div
+                  class="imageText"
+                  data-toggle="modal"
+                  data-target="#pagination"
+                >
+                  View
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="text col-sm mb-md-5">
+            <div class="imgWrap">
+              <img
+                class="slide-in from-right work mx-auto d-block"
+                src="./images/quotes.png"
+                alt="Gallery"
+              />
+              <a
+                class="demo btn btn-sm"
+                href="joseffkitchen.com/quotes"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                class="code btn btn-secondary btn-sm"
+                href="https://github.com/jkitchen002/quotes"
+                target="_blank"
+                >Code</a
+              >
+              <div class="overlay">
+                <div
+                  class="imageText"
+                  data-toggle="modal"
+                  data-target="#quotes"
+                >
+                  View
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-100"></div>
+
           <div class="col-sm mb-md-5">
             <div class="imgWrap">
               <img
@@ -332,7 +374,7 @@
               />
               <a
                 class="demo btn btn-sm"
-                href="employee-directory.joseffkitchen.com"
+                href="joseffkitchen.com/employee-directory"
                 target="_blank"
                 >Demo</a
               >
@@ -363,7 +405,7 @@
               />
               <a
                 class="demo btn btn-sm"
-                href="webapp-dashboard.joseffkitchen.com"
+                href="joseffkitchen.com/webapp-dashboard"
                 target="_blank"
                 >Demo</a
               >
@@ -396,7 +438,7 @@
               />
               <a
                 class="demo btn btn-sm"
-                href="game-show-app.joseffkitchen.com"
+                href="joseffkitchen.com/game-show-app"
                 target="_blank"
                 >Demo</a
               >
@@ -427,7 +469,7 @@
               />
               <a
                 class="demo btn btn-sm"
-                href="interactive-photo-gallery.joseffkitchen.com"
+                href="joseffkitchen.com/interactive-photo-gallery"
                 target="_blank"
                 >Demo</a
               >
