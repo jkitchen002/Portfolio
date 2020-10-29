@@ -196,8 +196,8 @@ header {
 #development:target::before {
   content: '';
   display: block;
-  height: 120px; /* fixed header height*/
-  margin: -70px 0 0; /* negative fixed header height */
+  height: 100px; /* fixed header height*/
+  margin: -100px 0 0; /* negative fixed header height */
 }
 
 h2 {
@@ -230,8 +230,8 @@ p {
 #portfolio:target::before {
   content: '';
   display: block;
-  height: 120px; /* fixed header height*/
-  margin: -70px 0 0; /* negative fixed header height */
+  height: 100px; /* fixed header height*/
+  margin: -100px 0 0; /* negative fixed header height */
 }
 
 .languages {
@@ -332,8 +332,8 @@ p {
 #contact:target::before {
   content: '';
   display: block;
-  height: 120px; /* fixed header height*/
-  margin: -70px 0 0; /* negative fixed header height */
+  height: 100px; /* fixed header height*/
+  margin: -120px 0 0; /* negative fixed header height */
 }
 
 svg {

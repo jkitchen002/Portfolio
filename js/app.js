@@ -21,7 +21,7 @@ aboutBtn.addEventListener('click', () => {
 //------------Nav bar scroll
 
 const sectionOneOptions = {
-  rootMargin: '-60px 0px 0px 0px',
+  rootMargin: '-100px 0px 0px 0px',
 };
 
 const sectionOneObserver = new IntersectionObserver(function (
