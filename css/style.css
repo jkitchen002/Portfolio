@@ -28,7 +28,7 @@ html {
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .nav-link {
@@ -201,7 +201,7 @@ header {
 }
 
 h2 {
-  margin: 1rem;
+  margin: 2rem;
   font-weight: bold;
   line-height: 50px;
   font-size: 2rem;
@@ -371,6 +371,9 @@ footer {
   }
   .logoWidth {
     width: 500px;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    padding: 2rem;
   }
 
   header {

@@ -18,27 +18,7 @@ aboutBtn.addEventListener('click', () => {
 
 // ----------Scroll---------------------
 
-//------------Nav bar scroll
-
-const sectionOneOptions = {
-  rootMargin: '-100px 0px 0px 0px',
-};
-
-const sectionOneObserver = new IntersectionObserver(function (
-  entries,
-  sectionOneObserver
-) {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      nav.classList.add('nav-container');
-    } else {
-      nav.classList.remove('nav-container');
-    }
-  });
-},
-sectionOneOptions);
-
-sectionOneObserver.observe(sectionOne);
+//------------Nav bar scroll------------
 
 const options = {
   threshold: 0.2,
@@ -88,18 +68,43 @@ sliders.forEach((slider) => {
   portfolioOnScroll.observe(slider);
 });
 
+const sectionOneOptions = {
+  rootMargin: '-100px 0px 0px 0px',
+};
+
+const sectionOneObserver = new IntersectionObserver(function (
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      nav.classList.add('nav-container');
+    } else {
+      nav.classList.remove('nav-container');
+    }
+  });
+},
+sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
+
+//------------Hamburger click------------
+
 const hamburgermenu = document.querySelector('.navbar-toggler-icon');
 const avatar = document.querySelector('.me');
 const speech = document.querySelector('.speech');
 const header = document.querySelector('header');
+const about = document.querySelector('#about');
 
 function display() {
   if (avatar.style.display === 'none' && speech.style.display === 'none') {
     avatar.style.display = 'block';
     speech.style.display = 'block';
+    about.style.marginTop = '5rem';
   } else {
     avatar.style.display = 'none';
     speech.style.display = 'none';
+    about.style.marginTop = '-10rem';
   }
 }
 
