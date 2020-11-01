@@ -150,7 +150,8 @@ header {
 }
 
 #about {
-  margin-top: 5rem;
+  margin-top: 7rem;
+  padding-top: 5rem;
 }
 
 #about:target::before {
@@ -166,13 +167,33 @@ header {
 }
 
 #about-btn {
+  cursor: pointer;
   border-radius: 50px;
-  box-shadow: 0 0 0.2em rgba(0, 153, 255, 0.7);
   text-align: center;
   padding: 0.5rem;
   background-color: rgba(0, 153, 255, 0.7);
   color: white;
-  cursor: pointer;
+  transition: all 0.2s;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#about-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#about-btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
 }
 
 #about-btn:focus {
@@ -193,23 +214,12 @@ header {
   color: #5fcf80;
 }
 
-#development:target::before {
-  content: '';
-  display: block;
-  height: 100px; /* fixed header height*/
-  margin: -100px 0 0; /* negative fixed header height */
-}
-
 h2 {
   margin: 2rem;
   font-weight: bold;
   line-height: 50px;
   font-size: 2rem;
   color: #343a40;
-}
-
-h2:hover {
-  border-bottom: 5px solid #09f;
 }
 
 p {
@@ -329,6 +339,14 @@ p {
   text-decoration: none;
   color: white;
 }
+
+#development:target::before {
+  content: '';
+  display: block;
+  height: 100px; /* fixed header height*/
+  margin: -100px 0 0; /* negative fixed header height */
+}
+
 #contact:target::before {
   content: '';
   display: block;
@@ -361,6 +379,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+  #about {
+    margin-top: 9rem;
+  }
+
   h2 {
     font-size: 3rem;
     margin: 3rem;
